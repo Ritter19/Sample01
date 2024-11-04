@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Organic Fruits</title>
+    <link rel="stylesheet" href="./css/samples.css" />
+  </head>
+  <body>
+    <section class="fruits-section">
+      <h1>Organic Fruits</h1>
+      <p>
+        Our organic fruits are hand-picked from local farms and delivered
+        straight to your doorstep, ensuring that you get the freshest and most
+        nutritious produce possible. We offer a wide selection of organic fruits
+        grown without the use of harmful pesticides or chemicals.
+      </p>
+      <ul class="fruit-list">
+        <li class="fruit-card strawberry">
+          <h2>Strawberry</h2>
+          <h5>Plant</h5>
+          <img src="/images/Strawberry.png" alt="Strawberry" />
+          <p>100 UAH/kg</p>
+        </li>
+        <li class="fruit-card banana">
+          <h2>Banana</h2>
+          <h5>Plant</h5>
+          <img src="/images/Banana.png" alt="Banana" />
+          <p>80 UAH/kg</p>
+        </li>
+        <li class="fruit-card watermelon">
+          <h2>Watermelon</h2>
+          <h5>Plant</h5>
+          <img src="/images/Watermelon.png" alt="Watermelon" />
+          <p>40 UAH/kg</p>
+        </li>
+        <li class="fruit-card lime">
+          <h2>Lime</h2>
+          <h5>Plant</h5>
+          <img src="/images/Lime.png" alt="Lime" />
+          <p>60 UAH/kg</p>
+        </li>
+        <li class="fruit-card apple">
+          <h2>Apple</h2>
+          <h5>Plant</h5>
+          <img src="/images/Apple.png" alt="Apple" />
+          <p>50 UAH/kg</p>
+        </li>
+        <li class="fruit-card peach">
+          <h2>Peach</h2>
+          <h5>Plant</h5>
+          <img src="/images/Peach.png" alt="Peach" />
+          <p>80 UAH/kg</p>
+        </li>
+        <li class="fruit-card plums">
+          <h2>Plums</h2>
+          <h5>Plant</h5>
+          <img src="/images/Plums.png" alt="Plums" />
+          <p>40 UAH/kg</p>
+        </li>
+        <li class="fruit-card orange">
+          <h2>Orange</h2>
+          <h5>Plant</h5>
+          <img src="/images/Orange.png" alt="Orange" />
+          <p>60 UAH/kg</p>
+        </li>
+        <li class="fruit-card kiwi">
+          <h2>Kiwi</h2>
+          <h5>Plant</h5>
+          <img src="/images/Kiwi.png" alt="Kiwi" />
+          <p>90 UAH/kg</p>
+        </li>
+      </ul>
+      <button class="order-button" onclick="openModal()">Order</button>
+    </section>
+
+    <div id="orderModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Your Order</h2>
+        <p>Your order has been placed successfully!</p>
+      </div>
+    </div>
+
+    <script>
+      function openModal() {
+        document.getElementById('orderModal').style.display = 'block';
+      }
+      function closeModal() {
+        document.getElementById('orderModal').style.display = 'none';
+      }
+    </script>
+  </body>
+</html>
